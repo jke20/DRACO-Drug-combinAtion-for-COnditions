@@ -10,14 +10,14 @@ library(knitr)
 library(httr)
 
 # this is the directory where you save your two tables from cdcdb: drug_trial.csv and mesh_terms.csv
-cdcdb_dir = "/project/pi_rachel_melamed_uml_edu/Jianfeng/Drug_combinations/06122025/cdcdb_triplets_preprocessing/"
+cdcdb_dir = cdcdb_dir
 ## load Jianfeng data files
 drug_trial = fread(paste0(cdcdb_dir,"drug_trial.csv"))
 trial_cond_mesh = fread(paste0(cdcdb_dir,"mesh_terms.csv"))
 
 ### Load MRCONSO.RRF (UMLS)
 # this directory is where you download your umls MRCONSO.RRF reference file
-mrconso_dir = "/project/pi_rachel_melamed_uml_edu/Panos/drug_combo_jianfeng/CT_20250605/"
+mrconso_dir = mrconso_dir
 rrf = fread(paste0(mrconso_dir, "umls-2025AA-mrconso.zip"), sep = "|", quote = "")
 rrf = rrf[, -19]
 # Column names meaning: https://www.ncbi.nlm.nih.gov/books/NBK9685/table/ch03.T.concept_names_and_sources_file_mr/?report=objectonly
