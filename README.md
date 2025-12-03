@@ -1,6 +1,10 @@
 # DRACO-Drug-combinAtion-for-COnditions
 Code and data for the paper: A Knowledge Graph Approach To Discovering Drug Combination Therapies Across The Phenome
-
+#### Full version of Table 1 & Supplementary tables 1-3 are located in folder: final_result_tables_mapping
+- Table 1: Top50 unannotated cdcdb drug combinations.xlsx
+- Supplementary tables 1: clinical_trials_with_proposed_second_drugs_w_names.csv
+- Supplementary tables 2: top_3_triplets_per_condition_w_names.csv
+- Supplementary tables 3: triplets_pass_threshold_w_names.csv
 ---
 
 ## Workflow
